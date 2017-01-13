@@ -1,4 +1,4 @@
-.card-title > a {
-  color: white;
-  text-decoration: underline;
+.section__pic {
+  background-image: url("/images/conf.jpg");
+  background-size: cover;
 }

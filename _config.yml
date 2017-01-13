@@ -7,9 +7,9 @@
 
 # Site settings
 title: 亞洲技術研討會一覽 2017
-email: your-email@domain.com
+email: asia.confs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  一次蒐集亞洲技術、軟體、創業、創新研討會
+  一次蒐集亞洲技術、軟體、創業、創新研討會資訊
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
