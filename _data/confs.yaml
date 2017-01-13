@@ -19,3 +19,16 @@
   date_end: 2017-06-18
   location: 台灣
 
+- title: QCon 北京
+  date_start: 2017-04-16
+  date_end: 2017-04-18
+  location: 北京, 中國
+  url: http://2017.qconbeijing.com/
+
+- title: 台灣資安大會
+  date_start: 2017-03-14
+  date_end: 2017-03-15
+  url: https://cyber.ithome.com.tw/2017/index
+  location: 台北, 台灣
+
+
