@@ -1,3 +1,13 @@
-- title: COSCUP
-  date: 2017-01-01 12:00
+- title: DSConf
+  date_start: 2017-01-14
+  url: http://datasci.tw/event/DM_QuickTour_170114/
+
+- title: SITCON
+  date_start: 2017-03-18
+  url: http://sitcon.org/2017/cfp/
+
+- title: HKOSCon
+  date_start: 2017-06-09
+  date_end: 2017-06-10
+  url: http://hkoscon.org/2017/cfp/
 
