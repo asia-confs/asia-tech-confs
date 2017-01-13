@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">2017 亞洲技術類會議/研討會清單</h1>
+
+  <ul class="conf-list">
+    {% for conf in site.data.confs %}
+      <li>
+        <span class="conf-meta">{{ conf.date | date: "%Y/%-m/%-d" }}</span>
+
+        <h3>
+          <a class="conf-link" href="{{ conf.url }}">{{ conf.title }}</a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
