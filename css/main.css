@@ -1,4 +1,7 @@
+---
+---
+
 .section__pic {
-  background-image: url("/images/conf.jpg");
+  background-image: url("{{ site.url  }}/images/conf.jpg");
   background-size: cover;
 }

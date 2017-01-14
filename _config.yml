@@ -11,7 +11,7 @@ email: asia.confs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   一次蒐集亞洲技術、軟體、創業、創新研討會資訊
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://asia-confs.github.io/asia-tech-confs/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
