@@ -13,7 +13,9 @@ layout: default
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">研討會一覽</a>
-          <a href="#add-info" class="mdl-layout__tab is-active">新增研討會</a>
+          <a href="#add-info" class="mdl-layout__tab">新增研討會</a>
+          <a href="#" class="mdl-layout__tab" id="translateLink">简体中文</a>
+
           <!--
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
             <i class="material-icons" role="presentation">add</i>
@@ -78,15 +80,27 @@ layout: default
               <ul class="mdl-mega-footer--link-list">
                 <li><a href="mailto:asia.confs@gmail.com">asia.confs@gmail.com</a></li>
               </ul>
-              <h1 class="mdl-mega-footer--heading">授權聲明</h1>
+              <h1 class="mdl-mega-footer--heading">致謝</h1>
               <ul class="mdl-mega-footer--link-list">
                 <li><a href="https://www.flickr.com/photos/cydcor/9323706488">會議示意圖</a> by <a href="https://www.flickr.com/photos/cydcor/">Cydcor</a> / <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></li>
+                <li><a href="http://blog.markplace.net/trackback.php?id=150">繁簡轉換</a> by <a href="http://blog.markplace.net/">Mark</a></li>
+
               </ul>
             </div>
         </footer>
       </main>
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="{{ site.url }}js/tw_cn.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      var defaultEncoding = 1; // 1: Tranditional Chinese, 2: Simplified Chinese
+      var translateDelay = 0;
+      var cookieDomain = "https://asia-confs.github.io";
+      var msgToTraditionalChinese = "繁體中文";
+      var msgToSimplifiedChinese = "简体中文"; 
+      var translateButtonId = "translateLink";
+      translateInitilization();
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)
