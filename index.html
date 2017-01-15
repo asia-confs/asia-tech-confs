@@ -31,7 +31,6 @@ layout: default
           {% assign sorted_confs = site.data.confs | sort: "date_start"%}
           {% for conf in sorted_confs %}
           {% assign loopindex = forloop.index | modulo: 4 %}
-          {{loopindex}}
           {% if loopindex == 1 %}
           <div class="ad_card">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
