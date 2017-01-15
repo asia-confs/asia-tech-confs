@@ -27,8 +27,25 @@ layout: default
 
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
+
           {% assign sorted_confs = site.data.confs | sort: "date_start"%}
           {% for conf in sorted_confs %}
+          {% assign loopindex = forloop.index | modulo: 4 %}
+          {{loopindex}}
+          {% if loopindex == 1 %}
+          <div class="ad_card">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Asia Confs -->
+            <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-7087435345513846"
+              data-ad-slot="8874642111"
+              data-ad-format="auto"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          {% endif %}
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__pic play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
             </header>
@@ -52,9 +69,11 @@ layout: default
                 <p> {{ conf.location }}</p>
                 <p> {{ conf.description }}</p>
               </div>
+              <!--
               <div class="mdl-card__actions">
-                <!--<a href="#" class="mdl-button">註冊</a>-->
+                <a href="#" class="mdl-button">註冊</a>
               </div>
+              -->
             </div>
           </section>
           {% endfor %}

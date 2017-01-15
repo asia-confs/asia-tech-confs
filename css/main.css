@@ -5,3 +5,7 @@
   background-image: url("{{ site.url  }}/images/conf.jpg");
   background-size: cover;
 }
+
+.ad_card {
+  text-align: center;
+}
