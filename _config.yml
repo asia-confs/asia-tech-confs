@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://asia-confs.github.io/asia-tech-confs/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+github_url: https://github.com/asia-confs/asia-tech-confs
 
 # Build settings
 markdown: kramdown
