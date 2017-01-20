@@ -15,7 +15,7 @@
   See the License for the specific language governing permissions and
   limitations under the License
 -->
-<html lang="{{page.lang}}">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,10 +75,12 @@
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">{{ page.overview  }}</a>
-          <a href="#add-info" class="mdl-layout__tab">{{ page.add_new }}</a>
+          <!--<a href="#add-info" class="mdl-layout__tab">{{ page.add_new }}</a>-->
           <a href="/en" class="mdl-layout__tab">English</a>
           <a href="/zh_tw" class="mdl-layout__tab">中文</a>
-          <a href="#" class="mdl-layout__tab" id="translateLink">简/繁切換</a>
+          {% if page.lang == "zh_tw" %}
+          <a href="#" class="mdl-layout__tab" id="translateLink">简体中文</a>
+          {% endif %}
 
           <!--
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
@@ -91,8 +93,8 @@
 
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
-
-          {% assign sorted_confs = site.data.confs | sort: "date_start"%}
+          {% assign conf_list = 'confs_' | append: page.lang  %}
+          {% assign sorted_confs = site.data[conf_list]| sort: "date_start"%}
           {% for conf in sorted_confs %}
           {% assign loopindex = forloop.index | modulo: 4 %}
           {% if loopindex == 1 %}
