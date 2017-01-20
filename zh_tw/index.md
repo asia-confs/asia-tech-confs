@@ -9,5 +9,6 @@ disclaimer_title: 聲明
 disclaimer: 本站內容由志工維護，不保證正確性，請以各研討會官方網站資訊為準。
 contact_title: 聯絡方式
 thanks_title: 致謝
-lang: zh-Hant
+lang: zh_tw
+html_lang: zh-Hant
 ---
